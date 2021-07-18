@@ -89,7 +89,11 @@ export default function Home({ postsPagination }: HomeProps) {
         <title>Home | spacetraveling</title>
       </Head>
       <main className={commonStyles.contentContainer}>
-        <img src="/images/logo.svg" alt="Spacetraveling" />
+        <Link href="/">
+          <a>
+            <img src="/images/logo.svg" alt="Spacetraveling" />
+          </a>
+        </Link>
 
         <section className={styles.contentPosts}>
           {posts.results.map(post => (
