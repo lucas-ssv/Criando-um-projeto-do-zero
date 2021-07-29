@@ -1,0 +1,20 @@
+.contentButtonPreview {
+  margin-top: 3rem;
+}
+
+.buttonPreview {
+  width: 100%;
+  border: 0;
+  background: var(--text-heading);
+  color: var(--background);
+  text-align: center;
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1.125rem 0;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

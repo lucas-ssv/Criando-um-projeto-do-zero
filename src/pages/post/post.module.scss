@@ -65,4 +65,46 @@
       }
     }
   }
+
+  hr {
+    border: 1px solid var(--border);
+    margin-top: 4rem;
+  }
+
+  .changePagePost {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+
+    div {
+      & + div {
+        text-align: right;
+      }
+    }
+
+    p {
+      width: 350px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 1.125rem;
+      color: var(--text-heading);
+    }
+
+    a {
+      display: block;
+      border: 0;
+      background: none;
+      margin-top: 0.5rem;
+
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-highlight);
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
 }
